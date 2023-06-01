@@ -1,0 +1,138 @@
+@font-face{
+    font-family: "norse";
+    src: url(Font/norse.ttf) format("truetype"),
+        url(Font/norse.woff) format("woff"),
+        url(Font/norse.woff2) format("woff2");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "norse";
+}
+:root{
+    --color: #FFC672;
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 1.6rem;
+}
+
+/* Not-Found Page */
+header .background-img{
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(image/hummus-veggie.jpeg) no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+header nav{
+    padding: 75px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Logo */
+nav .logo a{
+    color: var(--color);
+    font-size: 4.5rem;
+}
+nav .logo::after{
+    content: "";
+    display: block;
+    background: var(--color);
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+/* Nav Bar */
+nav .navlinks ul{
+    font-size: 4rem;
+    display: flex;
+    gap: 50px;
+}
+nav ul a{
+    color: white;
+}
+nav ul a::after{
+    content: "";
+    display: block;
+    background: var(--color);
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+nav ul a:hover::after{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Content 404 Page Not Found */
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6rem;
+    color: var(--color);
+}
+.content span{
+    color: white;
+}
+
+
+@media(max-width:1278px) {
+    .content{
+        font-size: 4.0rem;
+    }
+}
+
+
+@media(max-width:852px){
+    .content{
+        font-size: 3rem;
+    }
+    nav .navlinks{
+        display: none;
+    }
+    header nav{
+        justify-content: center;
+    }
+    nav .logo{
+        font-size: 7rem;
+    }
+}
+
+@media(max-width:648px){
+    .content{
+        font-size: 2rem;
+    }
+}
+@media(max-width:470px){
+    .content{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media(max-width:445px){
+    nav .logo{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:340px){
+    nav.logo{
+        font-size: 1rem;
+    }
+}

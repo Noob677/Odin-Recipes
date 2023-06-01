@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+    <title>Odin-Recipes</title>
+</head>
+<body>
+    
+    <!-- Nav bar and Hero section -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <a href="#" class="logo">Odin-Project</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                </ul>
+                <div class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div class="short"></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>FoodieFusion -</h1>
+                <h2>Unleash Your Culinary Creativity</h2>
+                <a href="#recipes" class="cta-btn">Recipes</a>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- About Us -->
+    <section class="about-us" id="about">
+        <div class="about-us-content">
+            <h1>About-Us</h1>
+            <p>
+                At FoodieFusion, we are passionate about the art of fusion cuisine. Our mission is to inspire and empower food enthusiasts to explore the endless possibilities of blending flavors, techniques, and cultural influences in their cooking. <br> <br>
+
+                With our curated collection of innovative recipes, we aim to push the boundaries of traditional cooking and encourage culinary creativity. Whether you're a seasoned chef or a home cook, our platform provides a space for you to embark on a gastronomic adventure and discover new tastes and textures. <br> <br>
+
+                We believe that food brings people together, and through our vibrant community, we foster connections among like-minded individuals who share a love for culinary exploration.Together, we elevate the art of cooking and celebrate the joy of discovering unique and delicious flavor combinations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Food Items and Cards    -->
+    <section class="food" id="recipes">
+        <div class="cards">
+            <div class="card">
+                <h1>Breakfast</h1>
+                <a href="Recipes.html">
+                    <img src="image/jennifer-burk-gwBcamFtPr4-unsplash.jpg" alt="Food Pic">
+                    <h2>Sausage Breakfast Casserole</h2>
+                    <p>Sausage Breakfast Casserole is a savory and satisfying dish that combines the flavors of breakfast sausage, bread, eggs, and cheese. It's a perfect choice for a hearty breakfast or brunch. The layers of sausage, bread, and cheese baked in an egg mixture create a delicious and comforting meal. With its simplicity and delicious taste, this casserole is sure to become a family favorite.</p>
+                </a>
+            </div>
+            <div class="card">
+                <h1>Lunch</h1>
+                <a href="Recipes-two.html">
+                    <img src="image/alex-munsell-auIbTAcSH6E-unsplash.jpg" alt="Food Pic">
+                    <h2>Grilling Thick Steaks </h2> 
+                    <p>Grilling thick steaks is a culinary art that results in juicy and flavorful meat. The high heat of the grill sears the outside while locking in the natural juices, creating a tender and mouthwatering steak. With proper seasoning, timing, and attention to temperature, grilling thick steaks guarantees a delicious dining experience.
+                    </p>
+                </a>
+            </div>
+            <div class="card">
+                <h1>Dinner</h1>
+                <a href="Recipes-third.html">
+                    <img src="image/brooke-lark--F_5g8EEHYE-unsplash.jpg" alt="Food Pic">
+                    <h2>Spicy Pumpkin Pork Noodles</h2>
+                    <p>Spicy Pumpkin Pork Noodles is a flavorful and aromatic dish that combines the richness of pumpkin, the heat of spices, and the tenderness of pork. The noodles soak up the delicious sauce, creating a satisfying and comforting meal. This fusion of flavors and textures makes it a unique and irresistible culinary experience.</p>
+                </a>
+            </div>
+        </div>
+        <div class="more">
+            <a href="Not-found.html">More...</a>
+        </div>
+    </section>
+
+<!-- This is footer -->
+    <footer>
+
+        <div class="top-footer">
+            <h1>FoodieFusion</h1>
+            <h2>Unleash Your Culinary Creativity</h2>
+        </div>
+        <div class="bottom-footer">
+            <p>© 2023 Company Name. All rights reserved.</p>
+            <p>Designed by Noob667</p>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu(){
+            let navlinks = document.querySelector(".nav-links")
+            navlinks.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Recipes.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <a href="index.html" class="logo">Odin-Project</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Recipes</a></li>
+                </ul>
+                <div class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div class="short"></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        </section>
+    </header>
+    <section class="recipe-info">
+        <div class="card">
+            <div class="img"><img src="image/brooke-lark--F_5g8EEHYE-unsplash.jpg" alt=""></div>
+            <div class="content">
+                <h1>Spicy Pumpkin Pork Noodles</h1>
+                <p>Spicy Pumpkin Pork Noodles is a flavorful and aromatic dish that combines the richness of pumpkin, the heat of spices, and the tenderness of pork. The noodles soak up the delicious sauce, creating a satisfying and comforting meal. This fusion of flavors and textures makes it a unique and irresistible culinary experience.</p>
+            </div>
+        </div>
+        <div class="time">
+            <div class="background">
+                <div class="data">
+                     <p>Prep Time: <br> 10 mins</p>                        
+                     <p>Cook Time: <br> 15 mins</p>                        
+                     <p>Total Time:<br> 25 mins</p>                      
+                     <p>Servings: <br> 2</p>                     
+                </div>
+            </div>
+        </div>
+
+        <div class="nutrition">
+            <div class="background">
+                <h2>Nutrition Facts (per serving)</h2>
+                <div class="data">
+                    <p>787 <br>  Calories</p>   
+                    <p>33g <br> Fat</p>     
+                    <p>90g <br> Carbs</p>  
+                    <p>32g <br> Protein</p>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipe">
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 teaspoons vegetable oil</li>
+                <li>8 ounces ground pork</li>
+                <li>salt and freshly ground black pepper to taste</li>
+                <li>¼ teaspoon smoked paprika</li>
+                <li>2 cloves minced garlic</li>
+                <li>⅓ cup sliced green onions</li>
+                <li>2 tablespoons hoisin sauce</li>
+<br>
+                <li>6 ounces bucatini (dry)</li>
+                <li>1 tablespoon reserved oil from cooking pork</li>
+                <li>½ cup pumpkin puree</li>
+                <li>2 tablespoons gochujang (Korean hot pepper paste)</li>
+                <li>½ cup sliced green onions</li>
+                <li>1 teaspoon sesame oil</li>
+                <li>2 tablespoons diced hot chile peppers</li>
+                <li>1 lime, juiced</li>
+                <li>¼ cup chopped fresh cilantro</li>
+            </ul>
+        </div>
+        <div class="directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>Heat oil in a skillet over medium high heat and cook pork, while breaking up into small pieces, 2 to 3 minutes. Season with salt, pepper, and smoked paprika and keep cooking and stirring until pork is crumble and is browned up, about 5 minutes. </li>
+                <li>Lower heat to medium and add garlic and green onions. Cook for 30 seconds until fragrant. Mix in hoisin sauce and cook until sauce has glazed over all the pork pieces, 1 to 2 minutes. Transfer pork topping to a bowl. </li>
+                <li>Pour out cooking grease but leave 1 tablespoon of grease in the skillet. Add pumpkin puree, gochujang, green onions, sesame oil, and chili peppers. Cook and stir over medium heat for 2 minutes. </li>
+                <li>Meanwhile, bring a large pot of lightly salted water to a boil. Cook bucatini the boiling water, stirring occasionally, until tender yet firm to the bite, about 10 minutes. Fish out noodles and drop into the skillet with the pumpkin sauce. Reserve about 1/2 cup pasta cooking water. </li>
+                <li>Squeeze lime juice on top of the noodles. Add about 2 tablespoons pasta water on top and mix noodles with the sauce until well combined. Keep adding pasta water, a little at a time, until sauce has reached your preferred consistency. </li>
+                <li>Turn off heat and stir in chopped cilantro. Transfer noodles to a plate and top with ground pork. </li>
+            </ol>
+        </div>
+
+    </section>
+
+<!-- This is footer -->
+<footer>
+
+    <div class="top-footer">
+        <h1>FoodieFusion</h1>
+        <h2>Unleash Your Culinary Creativity</h2>
+    </div>
+    <div class="bottom-footer">
+        <p>© 2023 Company Name. All rights reserved.</p>
+        <p>Designed by Noob667</p>
+    </div>
+
+</footer>
+<script>
+    function toggleMenu(){
+        let navlinks = document.querySelector(".nav-links")
+        navlinks.classList.toggle('open')
+    }
+</script>
+</body>
+</html>

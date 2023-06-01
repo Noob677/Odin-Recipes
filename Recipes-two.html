@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Recipes.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <a href="index.html" class="logo">Odin-Project</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Recipes</a></li>
+                </ul>
+                <div class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div class="short"></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        </section>
+    </header>
+    <section class="recipe-info">
+        <div class="card">
+            <div class="img"><img src="image/alex-munsell-auIbTAcSH6E-unsplash.jpg" alt=""></div>
+            <div class="content">
+                <h1>Grilling Thick Steaks</h1>
+                <p>Grilling thick steaks is a culinary art that results in juicy and flavorful meat. The high heat of the grill sears the outside while locking in the natural juices, creating a tender and mouthwatering steak. With proper seasoning, timing, and attention to temperature, grilling thick steaks guarantees a delicious dining experience.</p>
+            </div>
+        </div>
+        <div class="time">
+            <div class="background">
+                <div class="data">
+                     <p>Prep Time: <br> 10 mins</p>                        
+                     <p>Cook Time: <br> 35 mins</p>                        
+                     <p>Total Time:<br> 50 mins</p>                      
+                     <p>Servings: <br> 4</p>                     
+                </div>
+            </div>
+        </div>
+
+        <div class="nutrition">
+            <div class="background">
+                <h2>Nutrition Facts (per serving)</h2>
+                <div class="data">
+                    <p>549 <br>  Calories</p>   
+                    <p>38g <br> Fat</p>     
+                    <p> 8g <br> Carbs</p>  
+                    <p>42g <br> Protein</p>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipe">
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup hickory wood chips, soaked</li>
+                <li>1 (2 1/2 pound) 2-inch-thick porterhouse steak, at room temperature</li>
+                <li>sea salt and freshly ground black pepper to taste</li>
+                <li>1 tablespoon olive oil, or as needed</li>
+            </ul>
+        </div>
+        <div class="directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>Place wood chips in the smoker box of your gas grill according to manufacturer's instructions. </li>
+                <li>Preheat one side of the grill to about 250 degrees F (121 degrees C). </li>
+                <li>Season steak generously with sea salt and black pepper on both sides. </li>
+                <li>Place steak on the cool side of the preheated grill. Cook until an instant-read thermometer inserted into the center reads about 100 degrees F (37 degrees C), 25 to 30 minutes. Transfer steak to a plate. Brush with olive oil and cover with aluminum foil. </li>
+                <li>Increase heat on the grill to 600 degrees F (315 degrees C) by turning both burners up to maximum. </li>
+                <li>Return steak to the hot grill and cook until crust forms and an instant-read thermometer inserted into the center reads 125 degrees F (52 degrees C), about 3 minutes per side. Transfer steak to a clean plate. Cover with aluminum foil and let rest before serving, about 5 minutes. </li>
+            </ol>
+        </div>
+
+    </section>
+
+<!-- This is footer -->
+<footer>
+
+    <div class="top-footer">
+        <h1>FoodieFusion</h1>
+        <h2>Unleash Your Culinary Creativity</h2>
+    </div>
+    <div class="bottom-footer">
+        <p>© 2023 Company Name. All rights reserved.</p>
+        <p>Designed by Noob667</p>
+    </div>
+
+</footer>
+<script>
+    function toggleMenu(){
+        let navlinks = document.querySelector(".nav-links")
+        navlinks.classList.toggle('open')
+    }
+</script>
+</body>
+</html>

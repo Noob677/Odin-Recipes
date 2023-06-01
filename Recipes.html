@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Recipes.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <a href="index.html" class="logo">Odin-Project</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Recipes</a></li>
+                </ul>
+                <div class="menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div class="short"></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        </section>
+    </header>
+    <section class="recipe-info">
+        <div class="card">
+            <div class="img"><img src="image/jennifer-burk-gwBcamFtPr4-unsplash.jpg" alt="Pic" ></div>
+            <div class="content">
+                <h1>Sausage Breakfast Casserole</h1>
+                <p>Sausage Breakfast Casserole is a savory and satisfying dish that combines the flavors of breakfast sausage, bread, eggs, and cheese. It's a perfect choice for a hearty breakfast or brunch. The layers of sausage, bread, and cheese baked in an egg mixture create a delicious and comforting meal. With its simplicity and delicious taste, this casserole is sure to become a family favorite.   </p>
+            </div>
+        </div>
+        <div class="time">
+            <div class="background">
+                <div class="data">
+                     <p>Prep Time: <br> 15 mins</p>                        
+                     <p>Cook Time: <br> 1hr 10min</p>                        
+                     <p>Total Time:<br> 1hr 35min</p>                      
+                     <p>Servings: <br> 8</p>                     
+                </div>
+            </div>
+        </div>
+
+        <div class="nutrition">
+            <div class="background">
+                <h2>Nutrition Facts (per serving)</h2>
+                <div class="data">
+                    <p>377 <br>  Calories</p>   
+                    <p>30g <br> Fat</p>     
+                    <p> 13g <br> Carbs</p>  
+                    <p>22g <br> Protein</p>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipe">
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 (16 ounce) package bulk breakfast sausage</li>
+                <li>1 green onion, chopped</li>
+                <li>1 (16 ounce) package hash brown potatoes</li>
+                <li>2 cups shredded Cheddar cheese</li>
+                <li>6 large eggs, lightly beaten</li>
+                <li>1 cup milk</li>
+                <li>1 (2.64 ounce) package country gravy mix</li>
+                <li>1 pinch ground paprika, or to taste</li>
+            </ul>
+        </div>
+        <div class="directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>Preheat the oven to 325 degrees F (165 degrees C). Grease an 8x11-inch baking dish. </li>
+                <li>Cook and stir breakfast sausage in a skillet over medium heat until browned and crumbly, about 10 minutes; drain excess grease. </li>
+                <li>Mix green onion into the sausage and spread into the bottom of the prepared baking dish. </li>
+                <li>Spread hash brown potatoes in a layer over top; sprinkle with Cheddar cheese. </li>
+                <li>Whisk eggs, milk, and gravy mix together in a bowl until smooth; pour over casserole. Season with paprika. </li>
+                <li>Bake in the preheated oven until a knife inserted into the center of the casserole comes out clean, about 1 hour. Let stand 10 minutes to firm up before serving. </li>
+            </ol>
+        </div>
+
+    </section>
+
+<!-- This is footer -->
+<footer>
+
+    <div class="top-footer">
+        <h1>FoodieFusion</h1>
+        <h2>Unleash Your Culinary Creativity</h2>
+    </div>
+    <div class="bottom-footer">
+        <p>© 2023 Company Name. All rights reserved.</p>
+        <p>Designed by Noob667</p>
+    </div>
+
+</footer>
+<script>
+    function toggleMenu(){
+        let navlinks = document.querySelector(".nav-links")
+        navlinks.classList.toggle('open')
+    }
+</script>
+</body>
+</html>
