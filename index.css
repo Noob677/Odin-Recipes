@@ -148,6 +148,7 @@ header .hero h2{
 }
 .cards .card{
     width: 500px;
+    height: 1050px;
 }
 .card h1{
     text-align: center;
